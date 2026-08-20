@@ -865,4 +865,44 @@ button:hover {
         grid-template-columns: 1fr 1fr;
     }
 
+}/* =========================
+   BOUTON TÉLÉCHARGER
+========================= */
+
+.download-button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 25px auto 0;
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #222;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Ne pas afficher le bouton sur le PDF */
+
+@media print {
+
+    .download-button,
+    #rsvp,
+    audio {
+        display: none !important;
+    }
+
 }

@@ -618,4 +618,22 @@ rsvpForm.addEventListener(
         }
 
     }
-);
+);// =========================
+// TÉLÉCHARGER L'INVITATION
+// =========================
+
+const downloadInvitation =
+    document.getElementById("downloadInvitation");
+
+if (downloadInvitation) {
+
+    downloadInvitation.addEventListener(
+        "click",
+        function () {
+
+            window.print();
+
+        }
+    );
+
+}
